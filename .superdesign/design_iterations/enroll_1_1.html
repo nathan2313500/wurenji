@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI编程入门课程报名</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="edu_theme_1.css" rel="stylesheet">
+  <style>
+    .course-chapter:hover .chapter-number {
+      transform: rotate(15deg);
+    }
+    .enroll-button {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .enroll-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+  </style>
+</head>
+<body class="font-sans bg-background">
+  <!-- 课程封面 -->
+  <div class="h-64 bg-gradient-to-r from-primary to-secondary rounded-b-2xl">
+    <div class="container mx-auto pt-8 px-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-4xl font-bold text-primary-foreground">AI时代Python编程入门</h1>
+        <div class="mt-2 flex items-center space-x-2">
+          <div class="flex text-yellow-400">★★★★☆</div>
+          <span class="text-primary-foreground/80">4.5 评分（1,200+学员）</span>
+        </div>
+      </div>
+      <div class="hidden md:block space-y-1 text-primary-foreground/80">
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z"/>
+            <path fill="currentColor" d="M13 7h-2v6h6v-2h-4z"/>
+          </svg>
+          <span>36课时 · 每周更新</span>
+        </div>
+        <div class="flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8z"/>
+            <path fill="currentColor" d="M16.59 7.58L10 14.17l-2.59-2.58L6 13l4 4l8-8z"/>
+          </svg>
+          <span>实战项目 ×5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主要内容区 -->
+  <div class="container mx-auto px-4 py-8 grid md:grid-cols-3 gap-8">
+    <!-- 课程大纲 -->
+    <div class="md:col-span-2 space-y-6">
+      <div class="bg-card p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-semibold mb-4">课程亮点</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="p-3 bg-accent/10 rounded-lg border border-accent/20">
+            <div class="text-primary font-mono font-bold mb-2">✓ 零基础入门</div>
+            <div class="text-sm text-muted-foreground">从环境配置开始手把手教学</div>
+          </div>
+          <!-- 更多亮点... -->
+        </div>
+      </div>
+
+      <div class="bg-card p-6 rounded-xl shadow-md">
+        <h2 class="text-xl font-semibold mb-4">课程大纲</h2>
+        <div class="space-y-3">
+          <div class="course-chapter cursor-pointer p-3 hover:bg-accent/5 rounded-lg transition group">
+            <div class="flex items-center">
+              <div class="chapter-number w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center mr-3 transition">1</div>
+              <div class="flex-1">
+                <h3 class="font-medium">Python基础语法与数据结构</h3>
+                <div class="text-sm text-muted-foreground mt-1">3课时 · 包含4个练习</div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-muted-foreground transform transition-transform group-hover:rotate-90" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M10 17l5-5l-5-5v10z"/>
+              </svg>
+            </div>
+          </div>
+          <!-- 更多章节... -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 报名表单 -->
+    <div class="bg-card p-6 rounded-xl shadow-md sticky top-8">
+      <div class="text-center mb-6">
+        <div class="text-3xl font-bold text-primary">¥599</div>
+        <div class="text-muted-foreground line-through">原价 ¥999</div>
+      </div>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">姓名</label>
+          <input type="text" class="w-full p-2 border rounded-lg focus:ring-2 ring-primary">
+        </div>
+        <button class="enroll-button w-full bg-primary text-primary-foreground py-3 rounded-lg hover:bg-primary/90">
+          立即加入课程 →
+        </button>
+        <div class="text-center text-sm text-muted-foreground mt-4">
+          报名即代表同意
+          <a href="#" class="text-primary hover:underline">服务条款</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

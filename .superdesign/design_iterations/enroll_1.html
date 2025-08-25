@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI编程入门课程报名</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="edu_theme_1.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-background">
+  <!-- 课程封面 -->
+  <div class="h-64 bg-gradient-to-r from-primary to-secondary rounded-b-2xl">
+    <div class="container mx-auto pt-8 px-4">
+      <h1 class="text-4xl font-bold text-primary-foreground">AI时代Python编程入门</h1>
+    </div>
+  </div>
+
+  <!-- 主要内容区 -->
+  <div class="container mx-auto px-4 py-8 grid md:grid-cols-3 gap-8">
+    <!-- 课程大纲 -->
+    <div class="md:col-span-2 bg-card p-6 rounded-xl shadow-md">
+      <h2 class="text-xl font-semibold mb-4">课程大纲</h2>
+      <div class="space-y-3">
+        <div class="flex items-center p-3 hover:bg-accent rounded-lg transition">
+          <div class="w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center mr-3">1</div>
+          <span>Python基础语法与数据结构</span>
+        </div>
+        <!-- 更多课程章节... -->
+      </div>
+    </div>
+
+    <!-- 报名表单 -->
+    <div class="bg-card p-6 rounded-xl shadow-md sticky top-8">
+      <h2 class="text-xl font-semibold mb-6">立即报名</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">姓名</label>
+          <input type="text" class="w-full p-2 border rounded-lg focus:ring-2 ring-primary">
+        </div>
+        <button class="w-full bg-primary text-primary-foreground py-3 rounded-lg hover:bg-primary/90 transition">
+          立即加入课程 →
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
